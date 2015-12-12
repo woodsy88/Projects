@@ -1,0 +1,22 @@
+.topcontainer {
+display: flex;
+height: 500px;
+
+}
+
+
+.midcontainer {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around;
+
+}
+
+
+
+
+
+/*========================TOP SECTION==========================*/
+/*========================NAV BAR==========================*/
+/*========================SERVICES==========================*/
