@@ -1,22 +1,110 @@
-.topcontainer {
-display: flex;
-height: 500px;
-
-}
 
 
-.midcontainer {
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-justify-content: space-around;
-
-}
 
 
 
 
 
 /*========================TOP SECTION==========================*/
+
+
+.topcontainer {
+  height: 500px;
+}
 /*========================NAV BAR==========================*/
+
+.mainheader,
+.main-nav,
+.row {
+  display: flex;
+
+}
+
+.mainheader {
+  flex-direction: row;
+
+}
+
+
+/*======MEDIA QUERIES*========/
+
+/*1--------------------------*/
+
+@media (min-width: 769px) {
+
+.main-header,
+.main-nav,
+.row {
+display: flex;
+}
+
+.mainheader{
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.col {
+
+  flex
+}
+
+}
+
+/*1 END--------------------------*/
+
+/*2-------------------------------*/
+/*Targets elements that are 1025px and wider*/
+@media (min-width: 1025px) {
+
+.mainheader {
+
+  /* when the sccreen goes abovve 1025px, the nav bar turns into a row*/
+  flex-direction: row;
+  
+  /* pushes the nav bar items to each side of the screen*/
+justify-content: space-between;
+
+
+}
+
+/*2 END-------------------------------*/
+
+
+
+
 /*========================SERVICES==========================*/
+
+.midcontainer {
+display: flex;
+flex-wrap: wrap;
+
+
+}
+
+
+.midcontainer {
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+
+
+
+
+}
+
+.col {
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  width: 20%;
+
+
+  
+}
+
+
+.servicesheader {
+  font-size: 20px;
+}
+

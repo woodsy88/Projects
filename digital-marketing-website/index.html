@@ -2,11 +2,13 @@
 <html>
 <head>
 
+<link rel="stylesheet" type="text/css" href="css/base.css">
+
 
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/skeleton.css">
+
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
 
 	<title>Digital Marketing Studio</title>
@@ -15,13 +17,17 @@
 <body>
 
 <!--==================NAV BAR==============================-->
-<nav class="nav">
-  <ul>
-    <li>About</li>
-    <li>Contact</li>
-    <li>Services</li>
+<header class="mainheader">
+
+<h1 class="name"><a href="#">MojoDojo</a></h1>
+  <ul class="main-nav">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
   </ul>
-</nav>
+
+
+</header>
 
 <!--==================TOP SECTION==============================-->
 
@@ -34,29 +40,34 @@
 
 <!--==================SERVICES SECTION==============================-->
 
+<div class="row">
 <div class="midcontainer">
   
-        <div class="services service-1">
-              <h2>Digital Marketing</h2>
-              <p></p>
+        <div class="col service-1">
+              <h2 class="servicesheader">Digital Marketing</h2>
+              <p class="servicesbody">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus libero, commodo et diam eu, hendrerit facilisis ligula. Proin at accumsan dui, vel suscipit nunc. Curabitur ut est posuere odio convallis egestas ut hendrerit nibh. Sed ultrices magna erat, at aliquam lorem ultricies vel. </p>
         </div>
 
 
-        <div class="services service-2">
-              <h2>Web Development</h2>
-              <p></p>
+        <div class="col service-2">
+              <h2 class="servicesheader">Web Development</h2>
+              <p class="servicesbody">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus libero, commodo et diam eu, hendrerit facilisis ligula. Proin at accumsan dui, vel suscipit nunc. Curabitur ut est posuere odio convallis egestas ut hendrerit nibh. Sed ultrices magna erat, at aliquam lorem ultricies vel.</p>
         </div>
 
-        <div class="services service-3">
-           <h2>Event Planning</h2>
-              <p></p>
+        <div class="col service-3">
+           <h2 class="servicesheader">Event Planning</h2>
+              <p class="servicesbody">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus libero, commodo et diam eu, hendrerit facilisis ligula. Proin at accumsan dui, vel suscipit nunc. Curabitur ut est posuere odio convallis egestas ut hendrerit nibh. Sed ultrices magna erat, at aliquam lorem ultricies vel.</p>
         </div>
 
 
-        <div class="services service-4">
-             <h2>Content Creation</h2>
-              <p></p>
+        <div class="col service-4">
+             <h2 class="servicesheader">Content Creation</h2>
+              <p class="servicesbody">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus libero, commodo et diam eu, hendrerit facilisis ligula. Proin at accumsan dui, vel suscipit nunc. Curabitur ut est posuere odio convallis egestas ut hendrerit nibh. Sed ultrices magna erat, at aliquam lorem ultricies vel.</p>
         </div>
+
+
+
+</div>
 
 
 
@@ -77,10 +88,19 @@
 
 <!--==================SCRIPTS==============================-->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
 <script type="text/javascript" src="js/scripts.js"></script>
-<script src="js/app.js"></script>
+
+
+
+<!--===BACKSTRETCH====-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/jquery.backstretch.min.js"></script>
+<script>
+    $(".topcontainer").backstretch("img/1.jpg");
+</script>
 
 </body>
 </html>
