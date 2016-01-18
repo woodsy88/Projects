@@ -1,5 +1,7 @@
 
-
+body {
+    font-family: 'Open Sans'
+}
 
 
 
@@ -9,8 +11,32 @@
 
 
 .topcontainer {
-  height: 500px;
+  height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.toptitle {
+    color: black;
+}
+
+.topabout {
+    width: 40%;
+    color: black;
+    text-align: center
+}
+
+
+@media (max-width: 600px) {
+    
+    .topabout {
+        width: 80%;
+    }
+}
+
+
 /*========================NAV BAR==========================*/
 
 .mainheader,
@@ -85,8 +111,8 @@ flex-wrap: wrap;
 
 .midcontainer {
 flex-direction: row;
-justify-content: space-around;
-align-items: center;
+justify-content: space-between;
+
 
 
 
@@ -106,5 +132,6 @@ align-items: center;
 
 .servicesheader {
   font-size: 20px;
+    padding-top: 40px
 }
 
